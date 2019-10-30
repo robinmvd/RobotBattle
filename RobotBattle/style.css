@@ -1,0 +1,163 @@
+/* Font */
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap');
+/* Design */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  background-color: white;
+}
+
+body {
+  color: #272727;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0;
+  padding: 1rem;
+}
+
+.main{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+.panorama {
+  margin-bottom: 40px;
+  padding: 1rem; 
+}
+
+.panorama_content {
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  display: flex;
+  border-radius: 0.25rem;
+  background-image: url('img/Mask.jpg');
+  background-repeat: no-repeat;
+  background-size: 1800px 400px;
+  background-position: center top;
+}
+
+.panorama_title {
+  font-size: 5rem;
+  color: white;
+}
+
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.cards_item {
+  display: flex;
+  padding: 1rem;
+}
+
+.card_item--big {
+    flex-grow: 2;
+}
+
+@media (min-width: 40rem) {
+  .cards_item {
+    width: 50%;
+  }
+
+  .panorama_title {
+      font-size: 7rem;
+  }
+
+  .intro_content {
+    padding: 7em;;
+
+}
+}
+
+@media (min-width: 56rem) {
+  .cards_item {
+    width: 33.3333%;
+  }
+
+  .panorama_title {
+    font-size: 10rem;
+  }
+
+  .intro_content {
+    padding: 7em;;
+
+}
+}
+
+.card {
+  background-color: white;
+  border-radius: 0.25rem;
+  box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.card_content {
+  padding: 1rem;
+  background: white;
+}
+
+.card_title {
+  color: black;
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  margin: 0px;
+  text-align: center;
+}
+
+.card_text {
+  color: black;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  margin-bottom: 1.25rem;    
+  font-weight: 400;
+}
+
+.intro {
+  background-color: #f3f3f3;
+  border-radius: 0.25rem;
+  margin: 1rem;
+  padding: 1rem;
+}
+
+.intro_content {
+    padding: 3em;;
+
+}
+
+.intro_title {
+  text-align: center;
+
+}
+
+.intro_text {
+  text-align: center;
+  line-height: 1.7;
+
+}
